@@ -18,6 +18,28 @@
         body {
             font-family: "Sora", serif;
         }
+
+        .my-custom-animation {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 20px;
+            animation: typing 5s linear infinite alternate;
+           
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+    
+
     </style>
 </head>
 
@@ -72,8 +94,9 @@
             <!-- banner part start here -->
             <section>
                 <div class="banner-wrapper flex flex-col justify-center items-center">
-                    <div class="banner-content text-center">
-                        <h1 class="font-semibold text-6xl mt-24 text-[#111]">Freshness <span class="text-[#179800]"> You
+                    <div class="banner-content text-center my-custom-animation w-full">
+                        <h1 class="font-semibold text-6xl mt-24 text-[#111] ">Freshness <span class="text-[#179800]">
+                                You
                                 Can <br>Count </span>On, Prices You’ll Love!</h1>
                         <p class="my-8 font-normal text-xl text-[#111111] sm:px-24 lg:px-0">Shop your daily essentials
                             at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every
@@ -353,13 +376,15 @@
             </div>
         </section>
         <div class="max-w-7xl mx-auto px-2 absolute w-full sm:-top-[400px]   lg:-top-56">
-            <div class="top-footer-wrapper rounded-3xl bg-[#EFEBE3] sm:flex-col lg:flex-row flex justify-around items-center py-14 gap-4">
+            <div
+                class="top-footer-wrapper rounded-3xl bg-[#EFEBE3] sm:flex-col lg:flex-row flex justify-around items-center py-14 gap-4">
                 <div class="top-footer-left">
                     <img src="c2-assets/vegetable-busket.png" alt="">
                 </div>
                 <div class="top-footer-right">
                     <h3 class="font-semibold text-4xl text-[#111111]">Get Grocery News!</h3>
-                    <p class="pt-5 mb-8 font-normal text-xl text-[#111111]">Exclusive training tips, ticks, product deals and
+                    <p class="pt-5 mb-8 font-normal text-xl text-[#111111]">Exclusive training tips, ticks, product
+                        deals and
                         more.</p>
                     <input type="text" placeholder="Enter email"
                         class="pt-4 pl-4 pb-4 w-[470px] bg-white rounded-lg placeholder-[#C4C4C4] font-normal text-base"><br>
